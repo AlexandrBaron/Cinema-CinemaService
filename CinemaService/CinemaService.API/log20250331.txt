@@ -1,0 +1,322 @@
+2025-03-31 19:06:39.897 +02:00 [INF] Registered 12 endpoints in 4 033 milliseconds.
+2025-03-31 19:06:41.345 +02:00 [INF] Now listening on: https://localhost:7254
+2025-03-31 19:06:41.352 +02:00 [INF] Now listening on: http://localhost:5279
+2025-03-31 19:06:41.367 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-31 19:06:43.095 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 19:06:43.101 +02:00 [INF] Hosting environment: Development
+2025-03-31 19:06:43.106 +02:00 [INF] Content root path: C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\CinemaService.API
+2025-03-31 19:13:09.157 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger - null null
+2025-03-31 19:13:10.292 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger - 302 0 null 1143.6079ms
+2025-03-31 19:13:10.304 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/index.html - null null
+2025-03-31 19:13:10.449 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/index.html - 200 null text/html; charset=utf-8 145.3611ms
+2025-03-31 19:13:10.454 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/swagger-ui.css - null null
+2025-03-31 19:13:10.455 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/index.css - null null
+2025-03-31 19:13:10.455 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/swagger-ui-bundle.js - null null
+2025-03-31 19:13:10.455 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/swagger-ui-standalone-preset.js - null null
+2025-03-31 19:13:10.458 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-31 19:13:10.505 +02:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-03-31 19:13:10.518 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-03-31 19:13:10.556 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-03-31 19:13:10.570 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/index.css - 200 218 text/css 113.633ms
+2025-03-31 19:13:10.575 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 116.8338ms
+2025-03-31 19:13:10.588 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/swagger-ui.css - 200 152073 text/css 133.6744ms
+2025-03-31 19:13:10.589 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-03-31 19:13:10.591 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/swagger-ui-standalone-preset.js - 200 230294 text/javascript 135.0951ms
+2025-03-31 19:13:10.604 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/_vs/browserLink - null null
+2025-03-31 19:13:10.641 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/swagger-ui-bundle.js - 200 1452754 text/javascript 185.8663ms
+2025-03-31 19:13:10.893 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 289.3917ms
+2025-03-31 19:13:11.070 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/v1/swagger.json - null null
+2025-03-31 19:13:11.106 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/favicon-32x32.png - null null
+2025-03-31 19:13:11.123 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-03-31 19:13:11.129 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/favicon-32x32.png - 200 628 image/png 23.3846ms
+2025-03-31 19:13:11.629 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 559.1904ms
+2025-03-31 19:13:25.156 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/Halls - null null
+2025-03-31 19:13:25.174 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls'
+2025-03-31 19:13:25.562 +02:00 [INF] Handling GetHallCommand
+2025-03-31 19:13:43.580 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls'
+2025-03-31 19:13:43.587 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "Cinema.CinemaService" requested by the login. The login failed.
+Login failed for user 'A1\Alexa'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+ClientConnectionId:8c03bd4a-b461-47e0-9447-d45ccdb27efb
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at RegistrationService.Infrastructure.Repositories.HallRepository.GetAll() in C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\RegistrationService.Infrastructure\Repositories\HallRepository.cs:line 9
+   at CinemaService.UseCases.Halls.GetAll.GetAllHandler.Handle(GetHallCommand request, CancellationToken cancellationToken) in C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\CinemaService.UseCases\Halls\GetAll\GetHallHandler.cs:line 12
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at CinemaService.API.Halls.GetAll.GetAll.HandleAsync(CancellationToken ct) in C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\CinemaService.API\Halls\GetAll\GetAll.cs:line 17
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 19:13:43.688 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/Halls - 500 null text/plain; charset=utf-8 18531.5281ms
+2025-03-31 19:14:19.196 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/Halls - null null
+2025-03-31 19:14:19.207 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls'
+2025-03-31 19:14:19.213 +02:00 [INF] Handling GetHallCommand
+2025-03-31 19:14:29.412 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls'
+2025-03-31 19:14:29.417 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "Cinema.CinemaService" requested by the login. The login failed.
+Login failed for user 'A1\Alexa'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+ClientConnectionId:34dee1fd-65a6-4653-a661-5a87823a3106
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at RegistrationService.Infrastructure.Repositories.HallRepository.GetAll() in C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\RegistrationService.Infrastructure\Repositories\HallRepository.cs:line 9
+   at CinemaService.UseCases.Halls.GetAll.GetAllHandler.Handle(GetHallCommand request, CancellationToken cancellationToken) in C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\CinemaService.UseCases\Halls\GetAll\GetHallHandler.cs:line 12
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at CinemaService.API.Halls.GetAll.GetAll.HandleAsync(CancellationToken ct) in C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\CinemaService.API\Halls\GetAll\GetAll.cs:line 17
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 19:14:29.499 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/Halls - 500 null text/plain; charset=utf-8 10303.1511ms
+2025-03-31 19:21:49.590 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls - null null
+2025-03-31 19:21:49.606 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls'
+2025-03-31 19:21:49.618 +02:00 [INF] Handling GetHallCommand
+2025-03-31 19:21:57.526 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls - null null
+2025-03-31 19:21:57.539 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls'
+2025-03-31 19:21:57.544 +02:00 [INF] Handling GetHallCommand
+2025-03-31 19:22:01.597 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls'
+2025-03-31 19:22:01.597 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls'
+2025-03-31 19:22:01.608 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "Cinema.CinemaService" requested by the login. The login failed.
+Login failed for user 'A1\Alexa'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+ClientConnectionId:18634008-a9fa-4cc1-bf46-f87f2dad6987
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at RegistrationService.Infrastructure.Repositories.HallRepository.GetAll() in C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\RegistrationService.Infrastructure\Repositories\HallRepository.cs:line 9
+   at CinemaService.UseCases.Halls.GetAll.GetAllHandler.Handle(GetHallCommand request, CancellationToken cancellationToken) in C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\CinemaService.UseCases\Halls\GetAll\GetHallHandler.cs:line 12
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at CinemaService.API.Halls.GetAll.GetAll.HandleAsync(CancellationToken ct) in C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\CinemaService.API\Halls\GetAll\GetAll.cs:line 17
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 19:22:01.615 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "Cinema.CinemaService" requested by the login. The login failed.
+Login failed for user 'A1\Alexa'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+ClientConnectionId:18634008-a9fa-4cc1-bf46-f87f2dad6987
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at RegistrationService.Infrastructure.Repositories.HallRepository.GetAll() in C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\RegistrationService.Infrastructure\Repositories\HallRepository.cs:line 9
+   at CinemaService.UseCases.Halls.GetAll.GetAllHandler.Handle(GetHallCommand request, CancellationToken cancellationToken) in C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\CinemaService.UseCases\Halls\GetAll\GetHallHandler.cs:line 12
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at CinemaService.API.Halls.GetAll.GetAll.HandleAsync(CancellationToken ct) in C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\CinemaService.API\Halls\GetAll\GetAll.cs:line 17
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 19:22:01.780 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls - 500 null text/plain; charset=utf-8 12191.2225ms
+2025-03-31 19:22:01.861 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls - 500 null text/plain; charset=utf-8 4335.6375ms
+2025-03-31 19:26:27.951 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/Halls - null null
+2025-03-31 19:26:27.969 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls'
+2025-03-31 19:26:27.976 +02:00 [INF] Handling GetHallCommand
+2025-03-31 19:26:28.520 +02:00 [INF] Handled GetHallCommand with Ardalis.Result.Result`1[System.Collections.Generic.List`1[RegistrationService.Core.Entities.Hall]] in 537 ms
+2025-03-31 19:26:28.596 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls'
+2025-03-31 19:26:28.603 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/Halls - 200 null application/json; charset=utf-8 651.3253ms
+2025-03-31 19:35:59.108 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls - null null
+2025-03-31 19:35:59.126 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls'
+2025-03-31 19:35:59.137 +02:00 [INF] Handling GetHallCommand
+2025-03-31 19:35:59.340 +02:00 [INF] Handled GetHallCommand with Ardalis.Result.Result`1[System.Collections.Generic.List`1[RegistrationService.Core.Entities.Hall]] in 196 ms
+2025-03-31 19:35:59.352 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls'
+2025-03-31 19:35:59.359 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls - 200 null application/json; charset=utf-8 252.4011ms
+2025-03-31 19:36:25.300 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls - null null
+2025-03-31 19:36:25.311 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls'
+2025-03-31 19:36:25.316 +02:00 [INF] Handling GetHallCommand
+2025-03-31 19:36:25.336 +02:00 [INF] Handled GetHallCommand with Ardalis.Result.Result`1[System.Collections.Generic.List`1[RegistrationService.Core.Entities.Hall]] in 14 ms
+2025-03-31 19:36:25.342 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls'
+2025-03-31 19:36:25.347 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls - 200 null application/json; charset=utf-8 46.7906ms
+2025-03-31 20:13:18.984 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls/GetById/b0116d00-e611-43f7-eb3b-08dd69dd2b2a - null null
+2025-03-31 20:13:19.033 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:19.260 +02:00 [INF] Handling GetHallComand
+2025-03-31 20:13:19.268 +02:00 [INF] Property Id : "b0116d00-e611-43f7-eb3b-08dd69dd2b2a"
+2025-03-31 20:13:22.820 +02:00 [INF] Handled GetHallComand with Ardalis.Result.Result`1[RegistrationService.Core.Entities.Hall] in 3539 ms
+2025-03-31 20:13:22.841 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:22.850 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls/GetById/b0116d00-e611-43f7-eb3b-08dd69dd2b2a - 204 null null 3868.9189ms
+2025-03-31 20:13:22.879 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls/GetById/7b985a51-25f5-4333-eb3c-08dd69dd2b2a - null null
+2025-03-31 20:13:22.900 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:22.908 +02:00 [INF] Handling GetHallComand
+2025-03-31 20:13:22.913 +02:00 [INF] Property Id : "7b985a51-25f5-4333-eb3c-08dd69dd2b2a"
+2025-03-31 20:13:22.933 +02:00 [INF] Handled GetHallComand with Ardalis.Result.Result`1[RegistrationService.Core.Entities.Hall] in 12 ms
+2025-03-31 20:13:22.941 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:22.947 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls/GetById/7b985a51-25f5-4333-eb3c-08dd69dd2b2a - 204 null null 67.1833ms
+2025-03-31 20:13:22.971 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls/GetById/2e5380a6-95f5-4903-eb3d-08dd69dd2b2a - null null
+2025-03-31 20:13:22.985 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:22.997 +02:00 [INF] Handling GetHallComand
+2025-03-31 20:13:23.002 +02:00 [INF] Property Id : "2e5380a6-95f5-4903-eb3d-08dd69dd2b2a"
+2025-03-31 20:13:23.015 +02:00 [INF] Handled GetHallComand with Ardalis.Result.Result`1[RegistrationService.Core.Entities.Hall] in 7 ms
+2025-03-31 20:13:23.023 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:23.033 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls/GetById/2e5380a6-95f5-4903-eb3d-08dd69dd2b2a - 204 null null 62.2597ms
+2025-03-31 20:13:25.248 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls - null null
+2025-03-31 20:13:25.261 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls'
+2025-03-31 20:13:25.266 +02:00 [INF] Handling GetHallCommand
+2025-03-31 20:13:25.280 +02:00 [INF] Handled GetHallCommand with Ardalis.Result.Result`1[System.Collections.Generic.List`1[RegistrationService.Core.Entities.Hall]] in 9 ms
+2025-03-31 20:13:25.291 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls'
+2025-03-31 20:13:25.301 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls - 200 null application/json; charset=utf-8 53.4727ms
+2025-03-31 20:13:25.371 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls - null null
+2025-03-31 20:13:25.387 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls'
+2025-03-31 20:13:25.393 +02:00 [INF] Handling GetHallCommand
+2025-03-31 20:13:25.402 +02:00 [INF] Handled GetHallCommand with Ardalis.Result.Result`1[System.Collections.Generic.List`1[RegistrationService.Core.Entities.Hall]] in 4 ms
+2025-03-31 20:13:25.411 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls'
+2025-03-31 20:13:25.419 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls - 200 null application/json; charset=utf-8 47.3444ms
+2025-03-31 20:13:45.411 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls/GetById/b0116d00-e611-43f7-eb3b-08dd69dd2b2a - null null
+2025-03-31 20:13:45.426 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:45.431 +02:00 [INF] Handling GetHallComand
+2025-03-31 20:13:45.435 +02:00 [INF] Property Id : "b0116d00-e611-43f7-eb3b-08dd69dd2b2a"
+2025-03-31 20:13:45.457 +02:00 [INF] Handled GetHallComand with Ardalis.Result.Result`1[RegistrationService.Core.Entities.Hall] in 9 ms
+2025-03-31 20:13:45.465 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:45.473 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls/GetById/b0116d00-e611-43f7-eb3b-08dd69dd2b2a - 204 null null 62.2626ms
+2025-03-31 20:13:45.490 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls/GetById/7b985a51-25f5-4333-eb3c-08dd69dd2b2a - null null
+2025-03-31 20:13:45.508 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:45.514 +02:00 [INF] Handling GetHallComand
+2025-03-31 20:13:45.521 +02:00 [INF] Property Id : "7b985a51-25f5-4333-eb3c-08dd69dd2b2a"
+2025-03-31 20:13:45.534 +02:00 [INF] Handled GetHallComand with Ardalis.Result.Result`1[RegistrationService.Core.Entities.Hall] in 7 ms
+2025-03-31 20:13:45.543 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:45.550 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls/GetById/7b985a51-25f5-4333-eb3c-08dd69dd2b2a - 204 null null 59.8231ms
+2025-03-31 20:13:45.567 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls/GetById/2e5380a6-95f5-4903-eb3d-08dd69dd2b2a - null null
+2025-03-31 20:13:45.578 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:45.586 +02:00 [INF] Handling GetHallComand
+2025-03-31 20:13:45.591 +02:00 [INF] Property Id : "2e5380a6-95f5-4903-eb3d-08dd69dd2b2a"
+2025-03-31 20:13:45.610 +02:00 [INF] Handled GetHallComand with Ardalis.Result.Result`1[RegistrationService.Core.Entities.Hall] in 5 ms
+2025-03-31 20:13:45.619 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:45.624 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls/GetById/2e5380a6-95f5-4903-eb3d-08dd69dd2b2a - 204 null null 56.4109ms
+2025-03-31 20:13:52.449 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7254/Halls/GetById/b0116d00-e611-43f7-eb3b-08dd69dd2b2a - null null
+2025-03-31 20:13:52.468 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:52.474 +02:00 [INF] Handling GetHallComand
+2025-03-31 20:13:52.481 +02:00 [INF] Property Id : "b0116d00-e611-43f7-eb3b-08dd69dd2b2a"
+2025-03-31 20:13:52.495 +02:00 [INF] Handled GetHallComand with Ardalis.Result.Result`1[RegistrationService.Core.Entities.Hall] in 8 ms
+2025-03-31 20:13:52.503 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls/GetById/{Id}'
+2025-03-31 20:13:52.511 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7254/Halls/GetById/b0116d00-e611-43f7-eb3b-08dd69dd2b2a - 204 null null 61.5386ms

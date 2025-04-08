@@ -1,0 +1,35 @@
+2025-04-06 18:17:28.573 +02:00 [INF] Registered 12 endpoints in 3,775 milliseconds.
+2025-04-06 18:17:29.652 +02:00 [INF] Now listening on: https://localhost:7254
+2025-04-06 18:17:29.654 +02:00 [INF] Now listening on: http://localhost:5279
+2025-04-06 18:17:29.663 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-06 18:17:30.943 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-06 18:17:30.947 +02:00 [INF] Hosting environment: Development
+2025-04-06 18:17:30.952 +02:00 [INF] Content root path: C:\Users\Alexa\source\repos\Cinema-CinemaService\RegistrationService\CinemaService.API
+2025-04-06 18:18:20.794 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger - null null
+2025-04-06 18:18:21.063 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger - 302 0 null 273.1615ms
+2025-04-06 18:18:21.069 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/index.html - null null
+2025-04-06 18:18:21.112 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/index.html - 200 null text/html; charset=utf-8 42.8569ms
+2025-04-06 18:18:21.118 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/swagger-ui.css - null null
+2025-04-06 18:18:21.118 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/swagger-ui-bundle.js - null null
+2025-04-06 18:18:21.118 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/index.css - null null
+2025-04-06 18:18:21.118 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-06 18:18:21.119 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-06 18:18:21.140 +02:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-06 18:18:21.142 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-06 18:18:21.144 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/index.css - 200 218 text/css 25.2299ms
+2025-04-06 18:18:21.148 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-06 18:18:21.148 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 29.4965ms
+2025-04-06 18:18:21.153 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/swagger-ui.css - 200 152073 text/css 34.5692ms
+2025-04-06 18:18:21.162 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/swagger-ui-standalone-preset.js - 200 230294 text/javascript 43.0522ms
+2025-04-06 18:18:21.162 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/_vs/browserLink - null null
+2025-04-06 18:18:21.171 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-06 18:18:21.188 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/swagger-ui-bundle.js - 200 1452754 text/javascript 69.8137ms
+2025-04-06 18:18:21.256 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 93.8123ms
+2025-04-06 18:18:21.391 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/swagger/v1/swagger.json - null null
+2025-04-06 18:18:21.655 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 263.8425ms
+2025-04-06 18:18:26.483 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7254/Halls - null null
+2025-04-06 18:18:26.492 +02:00 [INF] Executing endpoint 'HTTP: GET /Halls'
+2025-04-06 18:18:26.661 +02:00 [INF] Handling GetHallCommand
+2025-04-06 18:18:37.246 +02:00 [INF] Handled GetHallCommand with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CinemaService.Core.Entities.Hall]] in 10581 ms
+2025-04-06 18:18:37.289 +02:00 [INF] Executed endpoint 'HTTP: GET /Halls'
+2025-04-06 18:18:37.311 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7254/Halls - 200 null application/json; charset=utf-8 10828.5244ms
